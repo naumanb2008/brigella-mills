@@ -55,9 +55,8 @@ img { display: block; }
 
 /* ---------------- Header ---------------- */
 .site-header {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(28,25,23,0.94);
-  backdrop-filter: blur(12px);
+  position: relative; z-index: 100;
+  background: var(--primary);
   color: var(--on-dark);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -71,7 +70,8 @@ img { display: block; }
 .brand a { text-decoration: none; }
 .tagline { font-family: "DM Sans", sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 3px; color: var(--on-dark-muted); }
 .header-contact { text-align: right; display: flex; flex-direction: column; gap: 2px; }
-.phone { color: var(--on-dark); font-weight: 600; font-size: 1.05rem; text-decoration: none; }
+.phone { color: var(--on-dark); font-weight: 600; font-size: 1.05rem; text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+.phone .ico { color: var(--accent-soft); flex: none; }
 .rating { color: var(--accent-soft); font-size: 0.85rem; }
 
 .main-nav { background: rgba(0,0,0,0.28); display: flex; justify-content: center; flex-wrap: wrap; }
